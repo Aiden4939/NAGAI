@@ -22,6 +22,7 @@ header a svg {
 }
 header div.icon i {
   font-size: 20px;
+  font-weight: 600;
   padding-left: 0.5rem;
 }
 
@@ -112,28 +113,11 @@ section.about div.content h4 {
 }
 section.about div.content p {
   color: #f8f8fa;
-  font-size: 14px;
-  font-weight: 300;
 }
 section.about div.content div.more a {
   color: #f8f8fa;
   background-color: #2b2b2b;
   border-color: #f8f8fa;
-}
-
-div.more a {
-  display: inline-block;
-  color: #343436;
-  font-size: 15px;
-  text-decoration: none;
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 10px 24px;
-  margin-top: 1.5rem;
-}
-div.more a i {
-  font-size: 10px;
-  margin-left: 2rem;
 }
 
 section.service {
@@ -172,6 +156,7 @@ section.service div.content div.picture a.picture .word {
   bottom: 0;
   left: 0;
   margin: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #f8f8fa;
 }
 section.service div.content div.picture a.picture .word h3 {
@@ -180,35 +165,65 @@ section.service div.content div.picture a.picture .word h3 {
   color: #f8f8fa;
 }
 section.service div.content div.picture a.picture .word p {
-  font-size: 13px;
-  font-weight: 400;
   color: #f8f8fa;
 }
 
 section.product {
   width: 100%;
-  height: 100vh;
   background-color: rgb(229, 229, 229);
   position: relative;
 }
 section.product img {
   width: 240px;
   height: 180px;
-  position: absolute;
 }
 section.product #product1 {
-  top: 5vh;
-  left: 0;
+  margin-top: 50px;
 }
 section.product #product2 {
-  top: 50%;
-  right: -20%;
-}
-section.product #product3 {
-  bottom: 5vh;
-  left: 10vw;
-}
-section.product div.content {
   position: absolute;
   top: 50%;
+  right: -20%;
+  transform: translateY(-50%);
+}
+section.product #product3 {
+  position: relative;
+  left: 1rem;
+  margin-bottom: 50px;
+}
+section.product div.content {
+  width: 240px;
+  height: 180px;
+  margin: 0.5rem 1rem;
+}
+section.product div.content p {
+  color: #7f8b96;
+}
+
+h2.title {
+  color: #7f8b96;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #f8f8fa;
+}
+
+div.more a {
+  display: inline-block;
+  color: #343436;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px 24px;
+  margin-top: 1.5rem;
+}
+div.more a i {
+  font-size: 10px;
+  margin-left: 2rem;
 }/*# sourceMappingURL=style.css.map */
