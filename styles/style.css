@@ -66,14 +66,6 @@ div.news {
   padding-top: 8rem;
   margin-top: -4rem;
 }
-div.news h3 {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 14px;
-}
-div.news h3 span {
-  font-size: 14px;
-}
 div.news div.news-column .news-link {
   padding: 1.5rem 0rem;
   border-bottom: 1px solid #343436;
@@ -170,7 +162,7 @@ section.service div.content div.picture a.picture .word p {
 
 section.product {
   width: 100%;
-  background-color: rgb(229, 229, 229);
+  background-color: rgb(214, 214, 214);
   position: relative;
 }
 section.product img {
@@ -183,8 +175,8 @@ section.product #product1 {
 section.product #product2 {
   position: absolute;
   top: 50%;
-  right: -20%;
-  transform: translateY(-50%);
+  right: 0;
+  transform: translateY(-50%) translateX(40%);
 }
 section.product #product3 {
   position: relative;
@@ -195,9 +187,59 @@ section.product div.content {
   width: 240px;
   height: 180px;
   margin: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 section.product div.content p {
-  color: #7f8b96;
+  color: #343436;
+}
+
+section.blog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  padding: 2rem 1rem;
+}
+section.blog h3 {
+  text-align: center;
+}
+section.blog p.small.sub.title {
+  text-align: center;
+}
+section.blog div.wrap {
+  width: 100%;
+}
+section.blog div.wrap div.content {
+  margin-bottom: 1.5rem;
+}
+section.blog div.wrap div.content a.wrap {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+section.blog div.wrap div.content a.wrap div.picture img {
+  width: 100px;
+  height: 80px;
+}
+section.blog div.wrap div.content a.wrap div.word {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.8rem;
+}
+section.blog div.wrap div.content a.wrap div.word p.name {
+  color: black;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+section.blog div.wrap div.content a.wrap div.word .date {
+  color: #000;
+  font-size: 10px;
 }
 
 h2.title {
@@ -219,11 +261,23 @@ div.more a {
   letter-spacing: 1px;
   text-decoration: none;
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 10px 24px;
   margin-top: 1.5rem;
 }
 div.more a i {
   font-size: 10px;
   margin-left: 2rem;
+}
+
+h3.small-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+p.small-sub-title {
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

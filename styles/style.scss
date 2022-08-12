@@ -75,14 +75,14 @@ div.news {
   padding-top: 8rem;
   margin-top: -4rem;
 
-  h3 {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 14px;
-    span {
-      font-size: 14px;
-    }
-  }
+  // h3.samll-title {
+  //   font-size: 20px;
+  //   font-weight: 300;
+  //   line-height: 14px;
+  //   span {
+  //     font-size: 14px;
+  //   }
+  // }
 
   div.news-column {
     .news-link {
@@ -144,8 +144,6 @@ section.about {
   }
 }
 
-
-
 section.service {
   width: 100%;
   background-color: white;
@@ -179,6 +177,7 @@ section.service {
         .word {
           // display: block;
           width: calc(100% - 3rem);
+          // width: 90%;
           position: absolute;
           bottom: 0;
           left: 0;
@@ -204,7 +203,7 @@ section.service {
 
 section.product {
   width: 100%;
-  background-color: rgb(229, 229, 229);
+  background-color: rgb(214, 214, 214);
   position: relative;
   img {
     width: 240px;
@@ -217,8 +216,8 @@ section.product {
   #product2 {
     position: absolute;
     top: 50%;
-    right: -20%;
-    transform: translateY(-50%);
+    right: 0;
+    transform: translateY(-50%) translateX(40%);
   }
   #product3 {
     position: relative;
@@ -230,10 +229,66 @@ section.product {
     width: 240px;
     height: 180px;
     margin: 0.5rem 1rem;
-    p{
-      color: #7f8b96;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      color: #343436;
     }
-    
+  }
+}
+
+section.blog {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  padding:2rem  1rem;
+  h3 {
+    text-align: center;
+  }
+  p.small.sub.title {
+    text-align: center;
+  }
+  div.wrap {
+    width: 100%;  
+    div.content {
+      margin-bottom: 1.5rem;
+      a.wrap {
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        // padding: 1rem;
+        align-items: center;
+
+        div.picture {
+          img {
+            width: 100px;
+            height: 80px;
+          }
+        }
+
+        div.word {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0.8rem;
+
+          p.name {
+            color: black;
+            font-weight: 400;
+            margin-bottom: 10px;
+          }
+
+          .date {
+            color: #000;
+            font-size: 10px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -257,7 +312,7 @@ div.more {
     letter-spacing: 1px;
     text-decoration: none;
     border: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 10px 24px;
     margin-top: 1.5rem;
 
@@ -266,4 +321,16 @@ div.more {
       margin-left: 2rem;
     }
   }
+}
+
+h3.small-title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+p.small-sub-title {
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
 }
