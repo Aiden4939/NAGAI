@@ -80,6 +80,9 @@ div.news div.news-column .news-link a {
   color: #343436;
   text-decoration: none;
 }
+div.news div.more {
+  margin-top: 1.5rem;
+}
 
 section.about {
   background-color: #2b2b2b;
@@ -110,6 +113,7 @@ section.about div.content div.more a {
   color: #f8f8fa;
   background-color: #2b2b2b;
   border-color: #f8f8fa;
+  margin-top: 1.5rem;
 }
 
 section.service {
@@ -130,6 +134,15 @@ section.service div.content div.picture #picture1 {
 }
 section.service div.content div.picture #picture2 {
   background-image: url(../images/service02.jpg);
+}
+section.service div.content div.picture #picture3 {
+  background-image: url(../images/recruit01.jpg);
+}
+section.service div.content div.picture #picture4 {
+  background-image: url(../images/recruit02.jpg);
+}
+section.service div.content div.picture #picture5 {
+  background-image: url(../images/company-bg.jpg);
 }
 section.service div.content div.picture a.picture {
   display: block;
@@ -158,6 +171,13 @@ section.service div.content div.picture a.picture .word h3 {
 }
 section.service div.content div.picture a.picture .word p {
   color: #f8f8fa;
+}
+section.service div.content div.picture a.picture h2.title {
+  color: #f8f8fa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 section.product {
@@ -193,6 +213,9 @@ section.product div.content {
 }
 section.product div.content p {
   color: #343436;
+}
+section.product div.content div.more {
+  margin-top: 1.5rem;
 }
 
 section.blog {
@@ -242,6 +265,41 @@ section.blog div.wrap div.content a.wrap div.word .date {
   font-size: 10px;
 }
 
+section.contact {
+  width: 100%;
+  background-image: url(../images/contact-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+section.contact div.cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.373);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+section.contact div.cover h2 {
+  color: #f8f8fa;
+  margin-bottom: 1.5rem;
+}
+section.contact div.cover p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section.contact div.cover a {
+  text-decoration: none;
+  color: #f8f8fa;
+}
+section.contact div.cover a span {
+  font-size: 20px;
+}
+section.contact div.cover div.more a {
+  border-color: #e8e8e8;
+}
+
 h2.title {
   color: #7f8b96;
   font-size: 32px;
@@ -263,7 +321,6 @@ div.more a {
   border: 1px solid #000;
   border-radius: 4px;
   padding: 10px 24px;
-  margin-top: 1.5rem;
 }
 div.more a i {
   font-size: 10px;
