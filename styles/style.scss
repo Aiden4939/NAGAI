@@ -416,6 +416,7 @@ section.product {
   background-color: rgb(214, 214, 214);
   position: relative;
   padding: 50px 0;
+  overflow: hidden;
   img {
     width: 240px;
     height: 180px;
@@ -491,6 +492,7 @@ section.product {
       transform: translateX(-50%);
     }
     div.content {
+      margin: 6rem 0;
       h2 {
         font-size: 4rem;
       }
@@ -500,11 +502,15 @@ section.product {
 
 @media screen and (min-width: 1200px) {
   section.product {
+    img {
+      width: 600px;
+      height: 450px;
+    }
     #product1 {
       transform: translateX(-30%);
     }
     div.content {
-      margin: 6rem 0;
+      margin: 10rem 0;
     }
   }
 }

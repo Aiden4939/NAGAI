@@ -392,6 +392,7 @@ section.product {
   background-color: rgb(214, 214, 214);
   position: relative;
   padding: 50px 0;
+  overflow: hidden;
 }
 section.product img {
   width: 240px;
@@ -462,16 +463,23 @@ section.product div.content div.more {
   section.product #product1 {
     transform: translateX(-50%);
   }
+  section.product div.content {
+    margin: 6rem 0;
+  }
   section.product div.content h2 {
     font-size: 4rem;
   }
 }
 @media screen and (min-width: 1200px) {
+  section.product img {
+    width: 600px;
+    height: 450px;
+  }
   section.product #product1 {
     transform: translateX(-30%);
   }
   section.product div.content {
-    margin: 6rem 0;
+    margin: 10rem 0;
   }
 }
 section.blog {
